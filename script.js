@@ -10,7 +10,7 @@ window.matchMedia('(min-width:761px)').addEventListener('change',event=>{if(even
 document.querySelectorAll('[data-subject]').forEach(link=>link.addEventListener('click',()=>{document.querySelector('#subject').value=link.dataset.subject;}));
 document.querySelector('#year').textContent=new Date().getFullYear();
 const form=document.querySelector('#contact-form');
-const config=window.LEMUS_CONFIG||{endpoint:'',email:'tonylemus.socialmedia@gmail.com'};
+const config=window.LEMUS_CONFIG||{endpoint:'',email:'tony@lemuslandscaping.ca'};
 if(config.endpoint)document.querySelector('#form-note').textContent='Send your message directly to the Lemus team.';
 form.addEventListener('submit',async event=>{
  event.preventDefault();if(!form.reportValidity())return;
